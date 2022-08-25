@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(225, 246, 248);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculator {
+    max-width: 1000px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(80, 80, 80);
+    border: 2px solid rgb(80, 80, 80) ;
+    box-shadow: 0px 0px 15px #777;
+}
+#display {
+    height:600px;
+    text-align: right;
+    line-height: 92px ;
+    padding-top: 100px;
+    padding-right: 50px;
+    font-size: 80px;
+	color:rgb(193, 207, 207);
+    letter-spacing: 2px;
+}
+.output {
+    font-size: 60px;
+}
+.result {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding-top: 50px;
+    margin-bottom: 0px;
+    border-top: 2px solid rgb(193, 207, 207);
+   
+}
+.expression, #equal {
+    background-color: rgb(157, 167, 170);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border: 1px solid rgb(169, 178, 206);
+    border-radius: 50px 50px;
+    margin: 25px 40px;
+    color: rgb(240, 234, 234);
+    cursor:pointer;
+    transition: all 0.25s ease-in-out;
+    
+}
+
+.colored-btn {
+    color: rgb(41, 145, 41);
+    background-color:rgb(193, 207, 207) ;
+}
+.expression:first-child {
+    font-size: 100px;
+}
+.expression {
+    font-size: 60px;
+}
+
+#equal{
+    background-color:rgb(12,150,12) ;
+}
+#equal:active {
+    background-color:rgb(17, 82, 87);
+}
+.expression:active{
+    background-color: rgb(17, 82, 87);
+    
+}
+.colored-btn:active {
+    background-color: rgb(17, 82, 87) ;
+    color:rgb(240, 234, 234) ;
+}
+
+
+@media screen and (min-width: 990px) {
+    .calculator {
+        border: 2px solid rgb(80, 80, 80) ;
+        border-radius: 20px;
+        box-shadow: 0 0 15px #777;
+        height: 620px;
+        width: 350px;
+    
+    }
+    
+    #display {
+        height: 250px;
+        padding-top:50px ;
+        padding-right: 20px;
+        line-height: 50px;
+        
+    }
+    #buttons {
+        justify-content:space-between ;
+        align-items: center;
+        margin: 10px ;
+        padding-top: 10px;
+    }
+    .output {
+        font-size: 25px;
+    }
+    .result {
+        font-size: 35px;
+    }
+    
+
+    .expression, #equal {
+    background-color: rgb(157, 167, 170);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px;
+    margin: 12px;
+    color: rgb(240, 234, 234);
+    font-size: 25px;
+
+    }
+
+.colored-btn {
+    color: rgb(41, 145, 41);
+    background-color:rgb(193, 207, 207) ;
+}
+
+#equal{
+    background-color:rgb(12, 150, 12) ;
+}
+
+.expression:first-child{
+    font-size:35px ;
+}
+
+}
+
+
+    
